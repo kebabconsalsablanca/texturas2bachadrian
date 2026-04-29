@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Realidad Virtual - Práctica 2</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+     <a-assets></a-assets>
+     
+      <img id="suelo" src="suelos.png">,
+     <img id="pared" src="paredes.png">,
+     <img id="viga" src="vigas.png">,
+
+  
+   
+
+      <a-sky color="#ECECEC" position="0 1 0"></a-sky>
+      <a-entity light="type=ambient"; color="#FFFFFF" position="3 3 3"></a-entity>
+      <a-box id="techo" position="0 3.3 0" scale="3 0.2 3" src="vigas.png"></a-box>
+      <a-box position="0 0.1 0" rotation="0 0 0" scale="3 0.2 3" src="paredes.png"></a-box>
+      <a-box position="0 1.7 -1.4" rotation="0 90 90" scale="3 0.2 3" ></a-box>
+      <a-box position="1.4 1.7 0" rotation="0 0 90" scale="3 0.2 3" src="paredes.png"></a-box>
+      <a-box position="-0.5 0.45 0.5" rotation="0 45 0" scale="0.5 0.5 0.5" src="suelos.png"></a-box>
+      
+      <a-sphere position="0.5 0.7 0.75" radius="0.5" color="#3278c3"></a-sphere>
+      <a-cylinder position="-0.2 1.2 -0.25" radius="0.25" height="2" color="#FFC65D"></a-cylinder>
+      <a-cone position="1 0.8 -0.5" radius-bottom="0.5" height="1" color="#7BC8A4"></a-cone>
+      <a-entity id="rig" position="-3 1 3" rotation="0 -45 0">
+        <a-camera></a-camera>
+      </a-entity>
+      
+    </a-scene>
+  </body>
+</html>
